@@ -56,4 +56,19 @@ As asserções no Cypress são utilizadas para verificar se a aplicação está 
 
 ## 7. Estruturando testes eficientemente
 
-Para estruturar seus testes de maneira eficaz
+Para estruturar seus testes de maneira eficaz no Cypress, siga estas práticas recomendadas:
+
+- **Organize os testes em arquivos separados por funcionalidade:** Isso ajuda a manter os testes organizados e facilita a localização de testes específicos quando necessário. Crie uma estrutura de pastas dentro do diretório `cypress/integration` que reflita os componentes ou áreas da sua aplicação.
+
+- **Use `describe` e `it` para estruturar seus testes:** Agrupe testes relacionados usando blocos `describe` e use `it` para testes individuais. Isso não apenas organiza os testes de forma lógica, mas também melhora a legibilidade e a manutenção do código de teste.
+
+- **Aproveite `beforeEach` e `afterEach` para preparação e limpeza:** Essas funções são úteis para configurar o estado necessário antes de cada teste e para limpeza após cada teste. Isso pode incluir a criação de dados de teste, login no aplicativo, ou limpar alterações de estado após a conclusão dos testes.
+
+- **Mantenha os testes independentes:** Cada teste deve ser capaz de ser executado de forma independente, sem depender do estado ou do resultado de outros testes. Isso aumenta a confiabilidade dos testes e facilita a identificação de falhas.
+
+- **Utilize comandos customizados para reutilização de código:** Para ações que são repetidamente usadas em vários testes, considere criar comandos customizados no Cypress. Isso ajuda a reduzir a duplicação de código e torna os testes mais concisos e fáceis de ler.
+
+- **Adote padrões de nomenclatura consistentes:** Use nomes claros e descritivos para arquivos de teste, blocos `describe`, `it` e comandos customizados. Isso torna mais fácil entender o que cada teste está verificando e localizar testes relacionados a partes específicas da sua aplicação.
+
+Implementando essas práticas, você pode maximizar a eficiência e a eficácia dos seus testes no Cypress, assegurando que sua aplicação funcione como esperado em todos os cenários.
+
